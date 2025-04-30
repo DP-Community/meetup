@@ -50,12 +50,16 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+button:hover,
+button:active,
+button:focus {
+  border-color: #f90;
+  outline: #f90;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #f90;
 }
 
 @media (prefers-color-scheme: light) {
